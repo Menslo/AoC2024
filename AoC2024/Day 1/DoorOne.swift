@@ -85,14 +85,12 @@ struct DoorOne: View {
     }
     
     func calcSecondAnswer() {
-        // Create a frequency dictionary for the right list
         var dataTwoRepeat: [Int: Int] = [:]
         
         for number in dataTwo {
             dataTwoRepeat[number, default: 0] += 1
         }
         
-        // Calculate the similarity score
         var result = 0
         
         for number in dataOne {
