@@ -9,6 +9,8 @@ import SwiftUI
 
 enum Day: Int, CaseIterable {
     case one = 1
+    case two = 2
+    case three = 3
 }
 
 extension Day {
@@ -20,6 +22,8 @@ extension Day {
     var view: some View {
         switch self {
         case .one: DoorOne()
+        case .two: DoorTwo()
+        case .three: DoorThree()
         default: EmptyView()
         }
     }
